@@ -64,10 +64,7 @@ img {
 .list-item {
   list-style: none;
 }
-/* .list-item > .link {
-  padding-top: 32px;
-  padding-bottom: 32px;
-} */
+
 .list-nav > .list-item:not(:last-child) {
   margin-right: 50px;
 }
@@ -108,8 +105,6 @@ img {
 .contacts-head {
   display: inline-block;
   color: var(--secondary-text-color);
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 .contacts {
   margin-left: auto;
