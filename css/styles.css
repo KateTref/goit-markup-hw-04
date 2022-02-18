@@ -103,18 +103,14 @@ img {
 .list-nav .link.current {
   color: var(--accent-color);
 }
-.envelope {
+.envelope, .smartphone {
 margin-right: 10px;
 fill: currentColor;
 }
 
-.smartphone {
-  margin-right: 10px;
-  fill: currentColor;
-}
-
 .contacts-head {
   display: flex;
+  height: 16px;
   color: var(--secondary-text-color);
   align-items: center;
 }
@@ -137,7 +133,7 @@ fill: currentColor;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url('../images/Img-background.jpg');
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: cover;
   background-size: 1600px;
 }
 .hero-title {
@@ -176,6 +172,16 @@ fill: currentColor;
   margin-left: -30px;
   margin-top: -30px;
   flex-wrap: wrap;
+}
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
 }
 .item-flex {
   margin-left: 30px;
@@ -251,6 +257,37 @@ fill: currentColor;
   border-radius: 0px 0px 4px 4px;
   padding: 30px 30px 30px 30px;
 }
+.list-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.link-icon {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  color: var(--border-color-icon);
+}
+.link-icon:hover, .link-icon:focus {
+  background-color: var(--accent-color);
+}
+.icon-item-social:not(:last-child) {
+  margin-right: 10px;
+}
+.list-social {
+  margin-top: 16px;
+}
+.social-icon {
+  fill: currentColor;  
+}
+.link-icon:hover .social-icon, .link-icon:focus .social-icon {
+  color: var(--white-color);
+}
+
 .client {
   display: flex;
   width:170px;
