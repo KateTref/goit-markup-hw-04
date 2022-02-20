@@ -112,7 +112,6 @@ img {
 
 .contacts-head {
  display: flex;
- height: 16px;
  color: var(--secondary-text-color);
  align-items: center;
 }
@@ -135,8 +134,8 @@ img {
  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
   url('../images/Img-background.jpg');
  background-repeat: no-repeat;
- background-position: cover;
- background-size: 1600px;
+ background-position: center;
+ background-size: cover;
 }
 .hero-title {
  font-weight: 900;
@@ -198,6 +197,7 @@ img {
  justify-content: center;
  align-items: center;
  border-radius: 4px;
+ margin-bottom: 30px;
 }
 .principles-title {
  font-size: 14px;
@@ -349,11 +349,11 @@ img {
 }
 .items-footer {
  display: flex;
+ align-items: baseline;
 }
 .links-footer {
  max-width: fit-content;
  margin-left: 70px;
- margin-top: 12px;
 }
 .list-social-footer {
  display: flex;
@@ -433,8 +433,12 @@ img {
  background-color: var(--white-color);
  padding: 20px 24px 20px 24px;
 }
+.link-portfolio {
+ text-decoration: none;
+ color: inherit;
+}
 .item-card:hover,
-.item-card:focus {
+.link-portfolio:focus {
  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
   1px 4px 6px rgba(0, 0, 0, 0.16);
 }
