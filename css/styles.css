@@ -136,6 +136,7 @@ img {
  background-repeat: no-repeat;
  background-position: center;
  background-size: cover;
+ max-width: 1600px;
 }
 .hero-title {
  font-weight: 900;
